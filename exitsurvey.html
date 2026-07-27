@@ -111,6 +111,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      width: 100%;
     }
     .chart-bar {
       height: 24px;
@@ -124,6 +125,8 @@
       font-size: 13px;
       font-weight: bold;
       min-width: 40px;
+      max-width: 100%;
+      width: calc((var(--bar-value) / var(--bar-max)) * 100%);
     }
     .chart-value {
       font-size: 14px;
@@ -263,21 +266,21 @@
           <div class="chart-item">
             <div class="chart-label">Yes</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 240px;">220</div>
+              <div class="chart-bar" style="--bar-value: 220; --bar-max: 240;">220</div>
               <div class="chart-value">220 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">Somewhat</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 16px;">15</div>
+              <div class="chart-bar" style="--bar-value: 15; --bar-max: 240;">15</div>
               <div class="chart-value">15 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">No</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 5px;">5</div>
+              <div class="chart-bar" style="--bar-value: 5; --bar-max: 240;">5</div>
               <div class="chart-value">5 students</div>
             </div>
           </div>
@@ -290,21 +293,21 @@
           <div class="chart-item">
             <div class="chart-label">Yes</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 229px;">210</div>
+              <div class="chart-bar" style="--bar-value: 210; --bar-max: 240;">210</div>
               <div class="chart-value">210 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">Sometimes</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 27px;">25</div>
+              <div class="chart-bar" style="--bar-value: 25; --bar-max: 240;">25</div>
               <div class="chart-value">25 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">No</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 5px;">5</div>
+              <div class="chart-bar" style="--bar-value: 5; --bar-max: 240;">5</div>
               <div class="chart-value">5 students</div>
             </div>
           </div>
@@ -317,28 +320,28 @@
           <div class="chart-item">
             <div class="chart-label">Team Sports</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 180px;">70</div>
+              <div class="chart-bar" style="--bar-value: 70; --bar-max: 240;">70</div>
               <div class="chart-value">70 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">Obstacle Course</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 168px;">65</div>
+              <div class="chart-bar" style="--bar-value: 65; --bar-max: 240;">65</div>
               <div class="chart-value">65 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">Team Challenges</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 194px;">75</div>
+              <div class="chart-bar" style="--bar-value: 75; --bar-max: 240;">75</div>
               <div class="chart-value">75 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">Wellness Station</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 77px;">30</div>
+              <div class="chart-bar" style="--bar-value: 30; --bar-max: 240;">30</div>
               <div class="chart-value">30 students</div>
             </div>
           </div>
@@ -351,21 +354,21 @@
           <div class="chart-item">
             <div class="chart-label">Yes</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 240px;">195</div>
+              <div class="chart-bar" style="--bar-value: 195; --bar-max: 240;">195</div>
               <div class="chart-value">195 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">A little</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 49px;">40</div>
+              <div class="chart-bar" style="--bar-value: 40; --bar-max: 240;">40</div>
               <div class="chart-value">40 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">No</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 6px;">5</div>
+              <div class="chart-bar" style="--bar-value: 5; --bar-max: 240;">5</div>
               <div class="chart-value">5 students</div>
             </div>
           </div>
@@ -378,28 +381,28 @@
           <div class="chart-item">
             <div class="chart-label">More activity choices</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 146px;">60</div>
+              <div class="chart-bar" style="--bar-value: 60; --bar-max: 240;">60</div>
               <div class="chart-value">60 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">More breaks</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 85px;">35</div>
+              <div class="chart-bar" style="--bar-value: 35; --bar-max: 240;">35</div>
               <div class="chart-value">35 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">More team challenges</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 61px;">25</div>
+              <div class="chart-bar" style="--bar-value: 25; --bar-max: 240;">25</div>
               <div class="chart-value">25 students</div>
             </div>
           </div>
           <div class="chart-item">
             <div class="chart-label">Nothing, it was great</div>
             <div class="chart-bar-container">
-              <div class="chart-bar" style="width: 240px;">120</div>
+              <div class="chart-bar" style="--bar-value: 120; --bar-max: 240;">120</div>
               <div class="chart-value">120 students</div>
             </div>
           </div>
