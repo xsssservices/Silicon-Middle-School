@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Needs Assessment</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .content {
+      width: 100%;
+      max-width: 900px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #333;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+    ul, ol {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 12px 0;
+      padding-left: 25px;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .survey-data {
+      background: #f9f9f9;
+      border-left: 4px solid #333;
+      padding: 18px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .data-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 15px 0;
+    }
+    .data-item {
+      font-size: 15px;
+    }
+    .data-item strong {
+      color: #333;
+    }
+    .chart {
+      margin: 20px 0;
+    }
+    .chart-item {
+      margin: 12px 0;
+    }
+    .chart-label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #333;
+    }
+    .chart-bar-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .chart-bar {
+      height: 24px;
+      background: linear-gradient(90deg, #333 0%, #555 100%);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 8px;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      min-width: 40px;
+    }
+    .chart-value {
+      font-size: 14px;
+      color: #333;
+      min-width: 80px;
+      text-align: right;
+    }
+    .back-link {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .page-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      gap: 12px;
+    }
+    .nav-btn {
+      display:inline-block;
+      padding:10px 18px;
+      background:#333;
+      color:#fff;
+      text-decoration:none;
+      border-radius:4px;
+      font-weight:600;
+    }
+    .nav-btn:hover{
+      background:#555;
+    }
+    .nav-back:hover {
+      background: linear-gradient(135deg, #6f8294, #5b6c7d);
+    }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="content">
+      <h1>Needs Assessment</h1>
+      <hr>
+      
+      <h2>Purpose</h2>
+      <p>Before planning <strong>Silicon Middle School Play Day</strong>, Vee's Events conducted a student needs assessment to learn what students want, what they need, and how confident they feel trying new activities. These responses helped the team design activities that are engaging, inclusive, and suited to different skill levels.</p>
+
+      <h2>Student Survey Questions</h2>
+
+      <p>A survey was given to 240 students at Silicon Middle School before the event. The questions were designed to gather information about student interests, current skill levels, confidence, and support needs so the event could be planned around student voice.</p>
+
+      <h3>1. How often do you participate in physical activity outside of school?</h3>
+      <ul>
+        <li>Daily</li>
+        <li>A few times per week</li>
+        <li>Occasionally</li>
+        <li>Rarely</li>
+      </ul>
+
+      <h3>2. Which activities would you most enjoy during Play Day?</h3>
+      <ul>
+        <li>Team sports</li>
+        <li>Fitness challenges</li>
+        <li>Obstacle courses</li>
+        <li>Cooperative games</li>
+        <li>Relaxation/wellness activities</li>
+      </ul>
+
+      <h3>3. How confident are you when trying a new sport or activity?</h3>
+      <ul>
+        <li>Very confident</li>
+        <li>Somewhat confident</li>
+        <li>Not very confident</li>
+        <li>I prefer activities I already know</li>
+      </ul>
+
+      <h3>4. What helps you feel included and supported during physical activities?</h3>
+      <ul>
+        <li>Working with friends</li>
+        <li>Encouraging teammates</li>
+        <li>Having activities with different difficulty levels</li>
+        <li>Having non-competitive options</li>
+        <li>Clear instructions and support from leaders</li>
+      </ul>
+
+      <h3>5. Would you enjoy activities focused on teamwork and communication?</h3>
+      <ul>
+        <li>Yes</li>
+        <li>Maybe</li>
+        <li>No</li>
+      </ul>
+
+      <h3>6. What would make Play Day more enjoyable and meaningful for you?</h3>
+      <ul>
+        <li>More game choices</li>
+        <li>More breaks</li>
+        <li>Music and entertainment</li>
+        <li>More team challenges</li>
+      </ul>
+
+      <h2>Survey Data (240 Students)</h2>
+
+      <h3>Question 1: How often do students participate in physical activity outside school?</h3>
+      <div class="survey-data">
+        <div class="chart">
+          <div class="chart-item">
+            <div class="chart-label">Daily</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 180px;">72</div>
+              <div class="chart-value">72 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">A few times per week</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 240px;">96</div>
+              <div class="chart-value">96 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Occasionally</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 120px;">48</div>
+              <div class="chart-value">48 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Rarely</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 60px;">24</div>
+              <div class="chart-value">24 students</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Question 2: Favorite Play Day activities</h3>
+      <div class="survey-data">
+        <div class="chart">
+          <div class="chart-item">
+            <div class="chart-label">Team Sports</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 175px;">70</div>
+              <div class="chart-value">70 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Obstacle Courses</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 145px;">58</div>
+              <div class="chart-value">58 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Cooperative Games</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 130px;">52</div>
+              <div class="chart-value">52 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Fitness Challenges</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 87px;">35</div>
+              <div class="chart-value">35 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Wellness Activities</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 62px;">25</div>
+              <div class="chart-value">25 students</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Question 3: Student confidence trying new activities</h3>
+      <div class="survey-data">
+        <div class="chart">
+          <div class="chart-item">
+            <div class="chart-label">Very confident</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 200px;">80</div>
+              <div class="chart-value">80 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Somewhat confident</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 255px;">102</div>
+              <div class="chart-value">102 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Not very confident</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 95px;">38</div>
+              <div class="chart-value">38 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Prefer familiar activities</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 50px;">20</div>
+              <div class="chart-value">20 students</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Question 4: What helps you feel included during physical activities?</h3>
+      <div class="survey-data">
+        <div class="chart">
+          <div class="chart-item">
+            <div class="chart-label">Working with friends</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 240px;">82</div>
+              <div class="chart-value">82 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Encouraging teammates</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 187px;">64</div>
+              <div class="chart-value">64 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Different difficulty levels</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 170px;">58</div>
+              <div class="chart-value">58 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Non-competitive options</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 105px;">36</div>
+              <div class="chart-value">36 students</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Question 5: Would you enjoy activities focused on teamwork and communication?</h3>
+      <div class="survey-data">
+        <div class="chart">
+          <div class="chart-item">
+            <div class="chart-label">Yes</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 240px;">168</div>
+              <div class="chart-value">168 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Maybe</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 79px;">55</div>
+              <div class="chart-value">55 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">No</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 24px;">17</div>
+              <div class="chart-value">17 students</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Question 6: What would make Play Day more enjoyable?</h3>
+      <div class="survey-data">
+        <div class="chart">
+          <div class="chart-item">
+            <div class="chart-label">More game choices</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 240px;">76</div>
+              <div class="chart-value">76 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">More breaks</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 133px;">42</div>
+              <div class="chart-value">42 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">Music and entertainment</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 161px;">51</div>
+              <div class="chart-value">51 students</div>
+            </div>
+          </div>
+          <div class="chart-item">
+            <div class="chart-label">More team challenges</div>
+            <div class="chart-bar-container">
+              <div class="chart-bar" style="width: 225px;">71</div>
+              <div class="chart-value">71 students</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>How It Affects Our Play Day</h2>
+      <p>Based on the survey results, Vee's Events will focus on creating a balance between competitive and non-competitive activities. Since many students enjoy teamwork and social activities, the event will include cooperative challenges, relay activities, and group games. Because some students are less confident trying new activities, stations will be designed with different difficulty levels so everyone can participate comfortably.</p>
+      <p>The results also show that students value inclusion, which supports our goal of creating a Play Day where every student feels welcomed and successful.</p>
+
+            
+          
+          
+          
+          
+          
+    
+    
+    <div class="page-nav"><a class="nav-btn nav-back" href="smartgoals.html">Back</a><a class="nav-btn nav-next" href="brainstorm.html">Next</a></div>
+    </div>
+  </div>
+</body>
+</html>
